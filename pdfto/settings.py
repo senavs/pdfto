@@ -11,9 +11,15 @@ FLASK_RESTPLUS_VALIDATE = os.environ.get('FLASK_RESTPLUS_VALIDATE', True)
 FLASK_RESTPLUS_MASK_SWAGGER = os.environ.get('FLASK_RESTPLUS_MASK_SWAGGER', False)
 
 # endpoints
+# example
 ENDPOINT_1 = 'endpoint'
 ENDPOINT_1_DESCRIPTION = 'description endpoint 1'
 ENDPOINT_1_ROUTE_1 = '/route1'
+# pdfto
+ENDPOINT_PDFTO = 'pdfto'
+ENDPOINT_PDFTO_DESCRIPTION = 'Manage PDF files'
+ENDPOINT_PDFTO_ROUTE_NPAGE = '/npage'
+ENDPOINT_PDFTO_B64_DIRECTORY = '/home/sena/Documents'
 
 # swagger settings
 SWAGGER_DOC = '/swagger'
