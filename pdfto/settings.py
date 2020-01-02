@@ -19,6 +19,7 @@ ENDPOINT_1_ROUTE_1 = '/route1'
 ENDPOINT_PDFTO = 'pdfto'
 ENDPOINT_PDFTO_DESCRIPTION = 'Manage PDF files'
 ENDPOINT_PDFTO_ROUTE_NPAGE = '/npage'
+ENDPOINT_PDFTO_ROUTE_TOTEXT = '/totext'
 ENDPOINT_PDFTO_B64_DIRECTORY = '/home/sena/Documents'
 
 # swagger settings
