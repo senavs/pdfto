@@ -10,6 +10,7 @@ class TemporaryBase64:
     def __init__(self, directory: str):
         self.directory = directory
         self.file = tempfile.NamedTemporaryFile(dir=directory)
+        self.file_path = self.file.name
 
     def __enter__(self):
         return self
