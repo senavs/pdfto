@@ -1,10 +1,8 @@
 import os
-import io
 import re
+import base64
 import subprocess
 from typing import Union, AnyStr, List
-
-from PIL import Image
 
 from core.exceptions.mypdf import MyPDFFileError
 
@@ -45,7 +43,8 @@ def toimage(file_path: str, image_type: AnyStr = '-jpeg') -> Union[int, List]:
         except subprocess.CalledProcessError:
             raise MyPDFFileError
 
-        image = Image.open(io.BytesIO(cmd_output))
+        image = base64.b64encode(cmd_output)
+        image = image.decode('utf-8')
         images.append(image)
 
     return images
