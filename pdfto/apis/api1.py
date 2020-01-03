@@ -1,6 +1,6 @@
 from flask_restplus import Namespace, Resource, fields
 
-import pdfto.settings as settings
+import settings
 
 api = Namespace(settings.ENDPOINT_1, description=settings.ENDPOINT_1_DESCRIPTION)
 

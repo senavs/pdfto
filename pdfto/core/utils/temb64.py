@@ -2,7 +2,7 @@ import base64
 import binascii
 import tempfile
 
-from pdfto.core.exceptions.temb64 import BrokenBase64
+from core.exceptions.temb64 import BrokenBase64
 
 
 class TemporaryBase64:

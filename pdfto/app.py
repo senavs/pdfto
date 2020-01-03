@@ -1,7 +1,7 @@
 from flask import Flask
 
-import pdfto.settings as settings
-from pdfto.apis import api
+import settings
+from apis import api
 
 app = Flask(settings.FLASK_APP)
 api.init_app(app)
