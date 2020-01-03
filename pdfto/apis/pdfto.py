@@ -1,12 +1,12 @@
 from flask import request
 from flask_restplus import Namespace, Resource, fields
 
-from pdfto import settings
-from pdfto.core.constants import http_code
-from pdfto.core.bo import mypdf
-from pdfto.core.exceptions.mypdf import MyPDFFileError
-from pdfto.core.utils.temb64 import TemporaryBase64
-from pdfto.core.exceptions.temb64 import BrokenBase64
+import settings
+from core.constants import http_code
+from core.bo import mypdf
+from core.exceptions.mypdf import MyPDFFileError
+from core.utils.temb64 import TemporaryBase64
+from core.exceptions.temb64 import BrokenBase64
 
 api = Namespace(settings.ENDPOINT_PDFTO, description=settings.ENDPOINT_PDFTO_DESCRIPTION)
 

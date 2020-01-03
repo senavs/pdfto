@@ -1,7 +1,7 @@
 from flask_restplus import Api
 
-import pdfto.settings as settings
-from pdfto.apis.pdfto import api as api_1
+import settings
+from apis.pdfto import api as api_1
 
 api = Api(doc=settings.SWAGGER_DOC,
           title=settings.SWAGGER_TITLE,

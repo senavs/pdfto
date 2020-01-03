@@ -6,7 +6,7 @@ from typing import Union, AnyStr, List
 
 from PIL import Image
 
-from pdfto.core.exceptions.mypdf import MyPDFFileError
+from core.exceptions.mypdf import MyPDFFileError
 
 
 def npage(file_path: str) -> int:
