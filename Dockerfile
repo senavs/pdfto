@@ -13,11 +13,14 @@ RUN apt-get update && apt-get install -y \
         poppler-utils  \
     && rm -rf /var/lib/apt/lists/*
 
-# coppying project to /code folder
-COPY ./pdfto /code
+# coppying requirements.txt to /code
+COPY ./pdfto/requirements.txt /code
 
 # installings python requirements
 RUN pip3 install -r requirements.txt
+
+# coppying project to /code
+COPY ./pdfto /code
 
 # project environment variables
 ENV FLASK_APP 'PDFto'
